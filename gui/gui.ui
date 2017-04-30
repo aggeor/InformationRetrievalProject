@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>542</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Search Engine Project</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="7" column="2">
+     <widget class="QPushButton" name="submitQuery_btn">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string>Submit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" rowspan="4" colspan="3">
+     <widget class="QListView" name="results_output"/>
+    </item>
+    <item row="4" column="2">
+     <widget class="QToolButton" name="directory_btn">
+      <property name="text">
+       <string>Change Directory</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="textQuery_input"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QPushButton" name="createIndex_btn">
+      <property name="text">
+       <string>Create Index</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QRadioButton" name="union_rdb">
+      <property name="text">
+       <string>Union</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QRadioButton" name="phrase_rdb">
+      <property name="text">
+       <string>Phrase</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QRadioButton" name="intersection_rdb">
+      <property name="text">
+       <string>Intersection</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
